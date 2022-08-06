@@ -6,11 +6,11 @@ $(document).ready(function () {
         dots: false,
         center: false,
         loop: true,
-        margin: 60,
-        autoplay: false,
-        autoPlaySpeed: 500,
-        autoPlayTimeout: 500,
-        autoplayHoverPause: false,
+        margin: 30,
+        autoplay: true,
+        autoPlaySpeed: 1000,
+        autoPlayTimeout: 1000,
+        autoplayHoverPause: true,
 
         // autoWidth:true
         responsive: {
@@ -18,8 +18,8 @@ $(document).ready(function () {
             1280: { items: 3 },
             0: { items: 3 },
             991: { items: 3 },
-            767: { items: 3 },
-            576: { items: 2 },
+            767: { items: 2 },
+            576: { items: 1 },
             480: { items: 1 },
             360: { items: 1 },
             320: { items: 1 }
