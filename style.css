@@ -1,0 +1,82 @@
+/* @import url('./fonts/stylesheet.css'); */
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("./fonts/CenturyGothic.eot");
+  src: url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("./fonts/CenturyGothic-Bold.eot");
+  src: url("./fonts/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic-Bold.woff2") format("woff2"), url("./fonts/CenturyGothic-Bold.woff") format("woff"), url("./fonts/CenturyGothic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Century Gothic';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+  font-family: 'Century Gothic';
+}
+
+h1 {
+  font-size: 70px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.insights {
+  padding: 5rem 0;
+}
+
+@media (max-width: 1440px) {
+  .insights {
+    padding: 3rem 0;
+  }
+}
+
+.insights .digital-insights {
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 1440px) {
+  .insights .digital-insights {
+    padding: 1.5rem;
+  }
+}
+
+.insights .digital-insights {
+  text-align: center;
+}
+
+.insights .digital-insights h1 {
+  font-weight: bold;
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
