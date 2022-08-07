@@ -81,7 +81,8 @@ input::-webkit-outer-spin-button {
     margin: 0;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -186,8 +187,13 @@ input[type=number] {
         @extend %subsection-padding;
         text-align: center;
 
-        .blog-listing h1 {
+        h1 {
             font-weight: bold;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: $red;
         }
 
         p {
@@ -211,6 +217,7 @@ input[type=number] {
         background-color: transparent;
         height: 100%;
         width: 70%;
+        font-size: 1rem;
         padding: 0 20px;
 
         &::placeholder {
@@ -298,12 +305,12 @@ input[type=number] {
         padding: 15px;
 
         legend {
-            font-size: 35px !important;
+            font-size: 35px;
             font-weight: bold;
             display: inline-block;
             width: auto;
             text-transform: uppercase;
-            font-size: 1rem;
+
             padding: 0px 10px;
         }
 
@@ -425,6 +432,87 @@ input[type=number] {
 }
 
 
+// blog details page 
+.blog-details {
+    @extend %section-padding;
+    text-align: center;
+
+    .blog-details-inner {
+        @extend %subsection-padding;
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-weight: bold;
+            color: $red;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.post-comment {
+    @extend %section-padding;
+    padding-top: 0;
+
+    fieldset {
+        border: 1px solid $grey;
+        padding: 15px;
+
+        legend {
+
+            text-transform: capitalize;
+            font-size: 35px;
+            font-weight: bold;
+            display: inline-block;
+            width: auto;
+            padding: 0px 10px;
+        }
+    }
+
+    .post-comment-form {
+
+        .post-comment-input {
+            width: 100%;
+            background-color: #ececec;
+            margin-bottom: 1rem;
+            border: none;
+            font-size: 1rem;
+            display: block;
+            padding: 1rem;
+
+            &::placeholder {
+                font-size: 24px;
+                font-weight: bold;
+                color: #c2c2c2;
+            }
+        }
+
+        .post-comment-submit {
+            background: #c10000;
+            padding: 10px 40px;
+            right: 0px;
+            bottom: 0px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            border: 1px solid #c10000;
+
+        }
+    }
+}
+
+
 // -------------Media Queries ------------
 
 @media(max-width:1440px) {
@@ -454,11 +542,26 @@ input[type=number] {
     }
 
     .newsletter fieldset legend {
-        font-size: 25px !important;
+        font-size: 25px;
     }
 
     .newsletter .follow-us>.blog-listing h3 {
         font-size: 25px;
+    }
+
+    // blog details media query
+    .blog-details .blog-details-inner h1 {
+        font-size: 35px;
+    }
+
+    .blog-details .blog-details-inner h2,
+    .post-comment fieldset legend {
+        font-size: 25px;
+    }
+
+    .post-comment .post-comment-form .post-comment-input::placeholder,
+    .post-comment .post-comment-form .post-comment-submit {
+        font-size: 1rem;
     }
 }
 
@@ -502,4 +605,10 @@ input[type=number] {
         transform: translateX(204%);
         width: 50px;
     }
+
+    // blog details page media query 
+    .blog-details .blog-details-inner h1 {
+        font-size: 30px;
+    }
+
 }
