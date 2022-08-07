@@ -37,29 +37,29 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+.blog-listing h1,
+.blog-listing h2,
+.blog-listing h3,
+.blog-listing h4,
+.blog-listing h5,
+.blog-listing h6,
 p,
 span,
 button {
     font-family: 'Century Gothic';
 }
 
-h1 {
+.blog-listing h1 {
     font-size: 70px;
     font-weight: bold;
 }
 
-h3 {
+.blog-listing h3 {
     font-size: 40pt;
     // font-weight: bold;
 }
 
-h6 {
+.blog-listing h6 {
     font-size: 30px;
     font-weight: bold;
 }
@@ -107,7 +107,7 @@ input[type=number] {
 }
 
 // read more animated button 
-.read-more {
+.blog-listing .read-more {
     margin-left: -3rem;
     border-radius: 35px;
     color: #c10000;
@@ -186,7 +186,7 @@ input[type=number] {
         @extend %subsection-padding;
         text-align: center;
 
-        h1 {
+        .blog-listing h1 {
             font-weight: bold;
         }
 
@@ -243,7 +243,7 @@ input[type=number] {
 
     .feature-blog-text {
 
-        h3 {
+        .blog-listing h3 {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
@@ -254,7 +254,7 @@ input[type=number] {
             margin-bottom: 1rem;
         }
 
-        >.read-more {
+        >.blog-listing .read-more {
             margin-bottom: 1rem;
         }
     }
@@ -263,7 +263,7 @@ input[type=number] {
 .recent-post {
     // @extend %section-padding;
 
-    h2 {
+    .blog-listing h2 {
         color: $red;
         font-weight: bold;
         text-align: center;
@@ -283,7 +283,7 @@ input[type=number] {
             background-color: $white;
         }
 
-        h6 {
+        .blog-listing h6 {
             margin-top: 1rem;
         }
     }
@@ -315,7 +315,7 @@ input[type=number] {
     .follow-us {
         margin-top: -3.5rem;
 
-        >h3 {
+        >.blog-listing h3 {
             font-size: 35px;
             display: inline-block;
             background-color: $white;
@@ -428,15 +428,15 @@ input[type=number] {
 // -------------Media Queries ------------
 
 @media(max-width:1440px) {
-    h1 {
+    .blog-listing h1 {
         font-size: 50px;
     }
 
-    h3 {
+    .blog-listing h3 {
         font-size: 30px;
     }
 
-    h6 {
+    .blog-listing h6 {
         font-size: 16px;
     }
 
@@ -457,7 +457,7 @@ input[type=number] {
         font-size: 25px !important;
     }
 
-    .newsletter .follow-us>h3 {
+    .newsletter .follow-us>.blog-listing h3 {
         font-size: 25px;
     }
 }
@@ -476,28 +476,28 @@ input[type=number] {
         width: 100%;
     }
 
-    .newsletter .follow-us>h3 {
+    .newsletter .follow-us>.blog-listing h3 {
         margin-bottom: 1rem;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    h1 {
+    .blog-listing h1 {
         font-size: 40px;
     }
 
-    .read-more {
+    .blog-listing .read-more {
         font-size: 13px;
         margin-top: 0rem;
         padding: 1rem 1.5rem;
     }
 
-    .read-more:after {
+    .blog-listing .read-more:after {
         right: 10px;
         opacity: 0.5;
     }
 
-    .read-more:before {
+    .blog-listing .read-more:before {
         -webkit-transform: translateX(204%);
         transform: translateX(204%);
         width: 50px;
